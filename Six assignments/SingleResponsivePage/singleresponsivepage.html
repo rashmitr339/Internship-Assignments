@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+    body {
+        background-image: url("./office3.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #0a0909;
+        color: #fffefed5;
+        padding: 20px;
+        text-align: center;
+    }
+    .image-container {
+        float: left;
+        margin-top: 100px;
+        margin-left: 40px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .image-container img {
+        width: 600px; /* Set width to 100% */
+        height: 400px;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .text {
+        padding-top: 100px;
+        color:  #d6d1d1;
+    }
+   
+    .text .media-body {
+        color: #d6d1d1;
+    }
+
+    /* Adjust text size for different screen sizes */
+    @media (max-width: 576px) {
+        .text h3 {
+            font-size: 1.5rem;
+        }
+        .text h6 {
+            font-size: 0.8rem;
+        }
+        .text h1 {
+            font-size: 1.8rem;
+        }
+        .image-container {
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+        }
+    }
+
+    /* Adjust layout for small screens */
+    @media (max-width: 768px) {
+        .image-container {
+            float: none;
+        }
+    }
+</style>
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to Single Page Application</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Single Responsive Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Content</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Contant Us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Phone</a>
+                <a class="dropdown-item" href="#">Email</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Webform</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+     <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="./singlepage.png" alt="Generic placeholder image">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text">
+                    <div class="media-body">
+                        <h3 class="mt-0">Responsive Page</h3>
+                        <h6>Employ CSS media queries to apply different styles based on the device's screen width or other characteristics. This allows you to create breakpoints where the layout and design can change to accommodate different screen sizes.</h6>
+                    </div>
+                    <div class="media-body">
+                        <h6>Optimize the performance of your page by minimizing unnecessary assets, such as large images or scripts, especially on mobile devices where bandwidth may be limited.</h6>
+                    </div>
+                    <h1> Enhance the experience for larger screens with additional features or design elements.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+

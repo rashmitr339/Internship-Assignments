@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url("./gray2.avif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content p {
+            color: dimgray;
+        }
+
+        .content img{
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .form {
+            margin-right: 350px;
+            margin-left: 350px;
+            margin-top: 50px;
+        }
+        
+        .border {
+            border: 1px solid #ccc; /* Border color */
+            border-radius: 10px; /* Border radius */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            padding: 20px; /* Padding inside the border */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <center>
+            <h1>
+                <img src="./checkout.jpg" style="height: 80px; width: 120px;">
+                <b>Checkout from</b>
+            </h1>
+            <p><i>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation </i></p>
+            <p><i>state that can be triggered by attempting to submit the form without completing it.</i></p>
+        </center>
+    </div>
+    <div class="form">
+        <h4><b>Billing address</b></h4>
+        <div class="border">
+        <form id="checkoutForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">First name</label>
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Last name</label>
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="A verification link will be sent to above email Id check & verify. ">
+                    Verify
+                </button>
+            </div>
+            <div class="form-row align-items-center">
+                <div class="col-auto">
+                    <label for="inputUsername">Username</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                   
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Shipping address is the same as my building address." style="border-radius: 50%;">
+                       i
+                      </button>
+                     
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <h5><b>Payment mode</b></h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Credit card
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Debit card
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Paypal
+                </label>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Name on card</label>
+                    <input type="text" class="form-control" placeholder="First name">
+                    <p style="font-size: 13px;">Full name as displayed on card</p>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Credit card number</label>
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Expiration</label>
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">CVV</label>
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+
+            $('#checkoutForm').submit(function (event) {
+                // Prevent the default form submission
+                event.preventDefault();
+
+                // Show an alert or message indicating successful submission
+                alert('Your response has been successfully submitted.');
+            });
+        });
+    </script>
+</body>
+</html>
