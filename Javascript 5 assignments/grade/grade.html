@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        form {
+            max-width: 300px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        #result {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1>Grade Calculator</h1>
+    <form id="gradeForm">
+        <label for="size">Enter the number of grades:</label>
+        <input type="number" id="size" name="size" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById("gradeForm").addEventListener("submit", function(event) { //method attaches an event handler function to the selected form element.
+            event.preventDefault();
+            let size = parseInt(document.getElementById("size").value); //whole number
+            let grades = [];
+            
+            for (let i = 0; i < size; i++) {
+                let grade = parseFloat(prompt("Enter grade " + (i + 1))); // It prompts the user to enter a grade obtained grade 
+                grades.push(grade);
+            }
+            
+            let sum = grades.reduce((acc, curr) => acc + curr, 0); //running total, method reduce into a single value
+            let avg = sum / size;
+            let result = document.getElementById("result");
+            
+            let gradeLetter;
+            if (avg >= 90) {
+                gradeLetter = "A";
+            } else if (avg >= 80) {
+                gradeLetter = "B";
+            } else if (avg >= 70) {
+                gradeLetter = "C";
+            } else if (avg >= 60) {
+                gradeLetter = "D";
+            } else if (avg >= 50) {
+                gradeLetter = "E";
+            } else {
+                gradeLetter = "F";
+            }
+            
+            result.innerHTML = "Your average is " + avg.toFixed(2) + ". So your grade is " + gradeLetter + ".";
+        });
+    </script>
+</body>
+</html>

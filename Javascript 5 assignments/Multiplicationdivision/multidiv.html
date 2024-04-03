@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+       .text {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        
+
+        .button{
+            width: 60px;
+            height: 30px;
+        }
+
+        .button:hover{
+            background-color: gray;
+        }
+
+        .res{
+            margin-top: 20px;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sample Form:</h1>
+    <div>
+            <form>
+                <div>
+                    <label for="firstnumber">1st Number</label>
+                    <input class ="text" type="text" placeholder="1st number" id="firstnumber">
+                </div>
+                <div>
+                    <label for="secondnumber">2nd Number</label>
+                    <input  class="text" type="text" placeholder="2nd number" id="secondnumber">
+                </div>
+                <div>
+                    <span>
+                    <button  class="button" type="submit" onclick="Multiply()">Multiply</button>
+                    </span>
+                    <span>
+                    <button class="button" type="submit" onclick="Division()">Divide</button>
+                  </span>
+                </div>
+                <div>
+                    <label class="res">Result:</label>
+                    <p id="result"></p>
+                </div>
+            </form>
+      
+    </div>
+   
+    <script>
+        function Multiply(){
+            var FirstNumber = document.getElementById('firstnumber').value;
+            var SecondNumber = document.getElementById('secondnumber').value;
+
+            var multiply = FirstNumber * SecondNumber;
+            document.getElementById('result').innerHTML = multiply;
+            event.preventDefault();
+        }
+
+        function Division(){
+            var FirstNumber = document.getElementById('firstnumber').value;
+            var SecondNumber = document.getElementById('secondnumber').value;
+
+            var divide = FirstNumber / SecondNumber;
+            document.getElementById('result').innerHTML = divide;
+            event.preventDefault();
+        }  
+    </script>
+</body>
+</html>

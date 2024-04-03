@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div><center>
+        <h1><u>1st January is being a Sunday</u></h1>
+        <p id="res"></p>
+       </center>
+     </div>
+    <script>
+        for (let year = 2014; year <= 2050; year++) {
+            const date = new Date(year, 0, 1); //ex: 2014,jan,1st
+            if (date.getDay() === 0) {         //Sunday
+                
+                var result = document.createElement('h2')
+                result.innerText = year
+                document.getElementById('res').appendChild(result)
+
+            }
+        }
+    </script>
+</body>
+</html>

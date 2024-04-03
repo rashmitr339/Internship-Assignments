@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .form{
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+    }
+    .text{
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    #operator{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+
+    }
+    
+    .button{
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .button:hover{
+        background-color: gray;
+    }
+    </style>
+</head>
+<body>
+    <h1>Calculator:</h1>
+    <div>
+        <center>
+            <form class="form">
+                
+                <div>
+                    <label for="firstnumber">1st Number:</label>
+                    <input class="text" type="number" placeholder="1st number" id="num1">
+                </div>
+                <div>
+                    <label for="secondnumber">2nd Number:</label>
+                    <input class="text" type="number" placeholder="2nd number" id="num2">
+                </div>
+                <div>
+                    <select id="operator">
+                        <option value="add">+</option>
+                        <option value="subtract">-</option>
+                        <option value="multiply">*</option>
+                        <option value="divide">/</option>
+                    </select>
+                </div>
+                <button class="button" type="button" onclick="calculate()"> Calculate</button>
+                <h4 id="result"></h4>
+            
+            </form>
+        </center>
+    </div>
+
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById("num1").value); //to parse the input values as floating-point numbers.
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var operator = document.getElementById("operator").value;
+            var result;
+        
+            switch (operator) {
+                case "add":
+                    result = num1 + num2;
+                    break;
+                case "subtract":
+                    result = num1 - num2;
+                    break;
+                case "multiply":
+                    result = num1 * num2;
+                    break;
+                case "divide":
+                    if (num2 !== 0) {
+                        result = num1 / num2;
+                    } else {
+                        result = "Cannot divide by zero";
+                    }
+                    break;
+                default:
+                    result = "Invalid operator";
+            }
+        
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

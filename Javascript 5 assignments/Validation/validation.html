@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            background-color: gray;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: black;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Validation Form:</h1>
+    <div>
+            <form>
+                <div>
+                    <label for="name">UserName</label>
+                    <input type="text" class="input" placeholder="name" id="name" >
+                </div>
+                <div>
+                    <label for="number">Phone</label>
+                    <input type="text" class="input" placeholder="number" id="number">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" class="input" placeholder="email" id="email" >
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" class="input" placeholder="password" id="password" >
+                </div>
+                <div> 
+                    <button type="submit" class="button" onclick="validateForm(event)">Login</button>
+                </div>
+            </form>
+        
+    </div>
+    <script>
+        function validateForm(event) {
+            var username = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var number = document.getElementById("number").value;
+
+            if (username !== "" && email !== "" && password !== "" && number !== "") {
+                showAlert("Login successful " + username + "!");
+            } else {
+                alert("Please fill out all fields.");
+                event.preventDefault();
+            }
+        }
+
+        function showAlert(message) {
+            alert(message);
+        }
+    </script>
+</body>
+</html>
+
+
+
