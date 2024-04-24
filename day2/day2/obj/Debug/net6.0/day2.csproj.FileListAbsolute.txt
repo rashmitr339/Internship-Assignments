@@ -1,0 +1,15 @@
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\bin\Debug\net6.0\day2.exe
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\bin\Debug\net6.0\day2.deps.json
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\bin\Debug\net6.0\day2.runtimeconfig.json
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\bin\Debug\net6.0\day2.dll
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\bin\Debug\net6.0\day2.pdb
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\obj\Debug\net6.0\day2.csproj.AssemblyReference.cache
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\obj\Debug\net6.0\day2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\obj\Debug\net6.0\day2.AssemblyInfoInputs.cache
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\obj\Debug\net6.0\day2.AssemblyInfo.cs
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\obj\Debug\net6.0\day2.csproj.CoreCompileInputs.cache
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\obj\Debug\net6.0\day2.dll
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\obj\Debug\net6.0\refint\day2.dll
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\obj\Debug\net6.0\day2.pdb
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\obj\Debug\net6.0\day2.genruntimeconfig.cache
+C:\Users\hemal\OneDrive\Documents\Desktop\day2\day2\obj\Debug\net6.0\ref\day2.dll
