@@ -1,0 +1,17 @@
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\bin\Debug\net6.0\day4.exe
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\bin\Debug\net6.0\day4.deps.json
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\bin\Debug\net6.0\day4.runtimeconfig.json
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\bin\Debug\net6.0\day4.dll
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\bin\Debug\net6.0\day4.pdb
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\obj\Debug\net6.0\day4.csproj.AssemblyReference.cache
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\obj\Debug\net6.0\day4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\obj\Debug\net6.0\day4.AssemblyInfoInputs.cache
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\obj\Debug\net6.0\day4.AssemblyInfo.cs
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\obj\Debug\net6.0\day4.csproj.CoreCompileInputs.cache
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\obj\Debug\net6.0\day4.dll
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\obj\Debug\net6.0\refint\day4.dll
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\obj\Debug\net6.0\day4.pdb
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\obj\Debug\net6.0\day4.genruntimeconfig.cache
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\obj\Debug\net6.0\ref\day4.dll
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\hemal\OneDrive\Documents\Desktop\day4\day4\obj\Debug\net6.0\day4.csproj.CopyComplete

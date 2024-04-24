@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lcjkQ/nB66tqLN6n5csW+VnsbX0xMU5otjy0RNnyKUBIeR13gpKGhi8V3/P90za8TVBoGCH4VqlFLvyTsKcg8Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hemal\\OneDrive\\Documents\\Desktop\\day4\\day4\\day4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hemal\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
